@@ -2,15 +2,15 @@ const React = require("react");
 const Nav = require("../components/Nav");
 const DefaultLayout = require("../layout/Default");
 
-class Show extends React.Component {
+class Show2 extends React.Component {
   render() {
-    const fruit = this.props.fruit;
+    const vegetable = this.props.vegetable;
     return (
       <DefaultLayout>
-        <Nav link="/fruits" text="Home" />
+        <Nav link="/vegetables" text="Home" />
         <h1> Show Page </h1>
-        The {fruit.name} is {fruit.color} <br />
-        {fruit.readyToEat
+        The {vegetable.name} is {vegetable.color} <br />
+        {vegetable.readyToEat
           ? "It is ready to eat"
           : "It is not ready to eat... Cant touch this"}
       </DefaultLayout>
@@ -18,4 +18,4 @@ class Show extends React.Component {
   }
 }
 
-module.exports = Show;
+module.exports = Show2;
